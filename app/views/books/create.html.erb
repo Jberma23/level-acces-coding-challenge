@@ -1,0 +1,12 @@
+
+
+
+
+<h2>Book List:</h2>
+<ul>
+<%@books.each do |book|%>
+<li>Title: <%=book.title%>,<br> Author: <%=book.author%>,<br> Description: <%=book.description%>,<br> Price: <%=book.price%></li>
+<%end%>
+</ul>
+<h2>Create a New Book:</h2>
+<%= render 'form', book: Book.new%>

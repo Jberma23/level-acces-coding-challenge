@@ -1,0 +1,12 @@
+
+
+
+
+<%=form_for @book, action: "books/create", method: "post" do |f|%>
+                    <%= f.text_field :title, required: true, class: 'form-control', placeholder: "Title of the book", alt: "user input for the title of the book"%>
+                    <%= f.text_field :author, required: true, class: 'form-control', placeholder: "Author Name", alt: "user input for the author of the book"%>
+                    <%= f.text_field :description, required: true, class: 'form-control', placeholder: "Description of the book", alt: "user input for the description of the book"%>
+                    <%= f.text_field :price, required: true, class: 'form-control', placeholder: "Price of the book", alt: "user input for the price of the book" %>
+                   <button type="submit" alt="form submit button" class="btn submit-btn">Submit</button>
+               
+<%end%>
